@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button:disabled {
+  background-color: #cccccc; /* Cor de fundo cinza para indicar desabilitado */
+  cursor: not-allowed; /* Cursor indicando que não está disponível para interação */
+  opacity: 0.7; /* Opacidade reduzida para indicar visualmente que está desabilitado */
+}
+
+/* styles.css */
+/* ... seus estilos existentes ... */
+
+/* Estilos para a mensagem de sucesso */
+.success-message {
+  background-color: #d1f5e8; /* Cor de fundo para indicar sucesso */
+  color: #009688; /* Cor do texto */
+  border: 1px solid #009688;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos para a mensagem de erro */
+.error-message {
+  background-color: #f8d7da; /* Cor de fundo para indicar erro */
+  color: #721c24; /* Cor do texto */
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* ... seus estilos existentes ... */
+
+ul li {
+  list-style-type: circle;
+}

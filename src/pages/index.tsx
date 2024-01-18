@@ -1,8 +1,12 @@
-// pages/index.tsx
-import LoadingSpinner from '@ui/components/Spinner';
-import axios from 'axios';
+/* eslint-disable max-len */
+// eslint-disable-next-line max-len
+
 import Head from 'next/head';
 import { useState } from 'react';
+
+import LoadingSpinner from '@ui/components/Spinner';
+import axios from 'axios';
+
 import { BASE_URL, downloadCSVFromBase64 } from 'src/helpers/file';
 
 const Home = () => {

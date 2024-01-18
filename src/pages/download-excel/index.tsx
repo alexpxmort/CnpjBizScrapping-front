@@ -8,6 +8,7 @@ import LoadingSpinner from '@ui/components/Spinner';
 import axios from 'axios';
 
 import { BASE_URL, downloadExcelFromBase64 } from 'src/helpers/file';
+import Link from 'next/link';
 
 const DownloadExcel = () => {
   const [loading, setLoading] = useState(false);
@@ -48,13 +49,14 @@ const DownloadExcel = () => {
   return (
     <>
       <Head>
-        <title>Cnpj Biz Scrapping</title>
+        <title>Cnpj Biz Scrapping - Download Planilha CnpjBiz</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Set padding on the body element for mobile spacing */}
       <div className="p-4">
+        <Link href={'/'}>Casa de Dados</Link>
         <label
           htmlFor="uploadFile1"
           className="bg-gray-800 hover:bg-gray-700 text-white text-sm px-4 py-2.5 outline-none rounded w-max cursor-pointer mx-auto block font-[sans-serif]"

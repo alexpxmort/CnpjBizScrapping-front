@@ -33,7 +33,7 @@ const DownloadExcel = () => {
     try {
       const data = new FormData();
       data.append('csvFile', selectedImage, selectedImage.name);
-      const result = await axios.post(`${BASE_URL}/upload/100`, data);
+      const result = await axios.post(`${BASE_URL}/upload/47`, data);
       if (result?.data?.data && result?.data?.data?.length > 0) {
         downloadExcelFromBase64(result?.data?.data, `${selectedImage.name.split('.')?.[0]}.xlsx`);
       }

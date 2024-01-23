@@ -8,7 +8,6 @@ import LoadingSpinner from '@ui/components/Spinner';
 import axios from 'axios';
 
 import { BASE_URL, downloadCSVFromBase64 } from 'src/helpers/file';
-import Link from 'next/link';
 
 const CsvGenerate = () => {
   const [loading, setLoading] = useState(false);

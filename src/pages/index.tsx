@@ -2,13 +2,13 @@
 // eslint-disable-next-line max-len
 
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import LoadingSpinner from '@ui/components/Spinner';
 import axios from 'axios';
 
 import { BASE_URL, downloadCSVFromBase64 } from 'src/helpers/file';
-import Link from 'next/link';
 
 const Home = () => {
   const [loading, setLoading] = useState(false);

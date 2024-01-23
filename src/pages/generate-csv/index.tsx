@@ -35,7 +35,7 @@ const CsvGenerate = () => {
     try {
       const data = new FormData();
 
-      if (!inputRefPhone?.current?.value || !inputRefQtdLine?.current?.value) {
+      if (!inputRefPhone?.current?.value && !inputRefQtdLine?.current?.value) {
         alert('Preencha um dos campos');
         return;
       }

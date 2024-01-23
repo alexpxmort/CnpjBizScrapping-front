@@ -36,3 +36,13 @@ button:disabled {
 ul li {
   list-style-type: circle;
 }
+
+.last-removed-input {
+  width: 300px; /* Largura desejada */
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+}

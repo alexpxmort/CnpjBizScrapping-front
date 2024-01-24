@@ -28,4 +28,4 @@ export function downloadCSVFromBase64(base64Data, fileName = 'download.csv') {
   document.body.removeChild(downloadLink);
 }
 
-export const BASE_URL = 'https://cmpjbiz.onrender.com';
+export const BASE_URL = 'https://cmpjbiz-v2.onrender.com';
